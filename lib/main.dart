@@ -201,15 +201,15 @@ class _LEDScreenState extends State<LEDScreen> {
               color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold), // กำหนดสีข้อความใน AppBar เป็นสีขาว
         ),
         backgroundColor:
-            Colors.deepPurple, // กำหนดสีของ AppBar เป็นสีค่ามาตรฐานของโปรแกรม
+            Colors.deepPurple, // กำหนดสีของ AppBar 
         centerTitle: true,
         elevation: 2, // กำหนดความหนาของเส้นขอบ AppBar
       ),
       body: Container(
-        color: Color.fromARGB(255, 202, 178, 255), // กำหนดสีพื้นหลังของ body เป็นสีเทาอ่อน
+        color: Color.fromARGB(255, 202, 178, 255), // กำหนดสีพื้นหลังของ body
         child: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
                 decoration: BoxDecoration(
@@ -263,7 +263,7 @@ class _LEDScreenState extends State<LEDScreen> {
                   onPressed: () {
                     setState(() {
                       number = (number - 1) %
-                          100; // ลดเลขขึ้น 1 และวนกลับไปเป็น 99 เมื่อถึง 00
+                          100; // ลดเลขลง 1 และวนกลับไปเป็น 99 เมื่อถึง 00
                     });
                   },
                 ),
